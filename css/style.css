@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+@supports (display: grid) {
+  header {
+    grid-area: head;
+  }
+  .about {
+    grid-area: tentang;
+  }
+  .img-pemateri {
+    grid-area: img-pemateri;
+  }
+  .pemateri {
+    grid-area: pemateri;
+  }
+  .img-tempat {
+    grid-area: img-tempat;
+  }
+  .tempat {
+    grid-area: tempat;
+  }
+  .contact {
+    grid-area: contact;
+  }
+  .map {
+    grid-area: peta;
+  }
+  .formulir {
+    grid-area: formulir;
+  }
+  footer {
+    grid-area: footer;
+  }
+  #root {
+    display: grid;
+    grid-template-areas:
+      'head head'
+      'tentang tentang'
+      'img-pemateri pemateri'
+      'tempat img-tempat'
+      'formulir formulir'
+      'contact peta'
+      'footer footer';
+  }
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: stretch;
+  background-image: url('../assets/image823.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kotak-hero {
+  display: flex;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.kotak-hero > h1 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about {
+  height: 85vh;
+  background-color: tan;
+  display: flex;
+  align-items: stretch;
+}
+
+.kotak-about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-pemateri {
+  height: 90vh;
+  background-image: url('../assets/image4697.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pemateri {
+  display: flex;
+  align-items: stretch;
+  padding: 20%;
+  text-align: center;
+}
+
+.kotak-pemateri {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-tempat {
+  height: 90vh;
+  background-image: url('../assets/image4804.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tempat {
+  display: flex;
+  padding: 20%;
+  align-items: stretch;
+  text-align: center;
+}
+
+.kotak-tempat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulir {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kotak-formulir {
+  width: 30vw;
+}
+
+.contact {
+  height: 80vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.kotak-contact {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 10vh;
+  text-align: center;
+}
+
+footer > p {
+  line-height: 12vh;
+}
